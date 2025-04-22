@@ -20,6 +20,7 @@ public class CustomerController {
 
   @PostMapping
   public ResponseEntity<Customer> createCustomer(@RequestBody CustomerDTO customerDTO) {
+
     return ResponseEntity.ok(customerService.create(customerDTO));
   }
 }
